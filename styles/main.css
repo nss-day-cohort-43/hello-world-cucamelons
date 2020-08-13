@@ -1,0 +1,17 @@
+.mainContainer{
+    border: black dotted 1px;
+}
+
+.cities {
+    border: green dotted 5px;
+}
+
+.city-name {
+    border: goldenrod dotted 1px;
+}
+.city-imgBox {
+    background-color: bisque;
+}
+.city-card {
+    display: flex;
+}

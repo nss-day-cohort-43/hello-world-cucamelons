@@ -28,11 +28,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     border: black dotted 1px;
+    display: flex;
 }
 
 .cities, .landmarks, .celebrities {
     border: green dotted 5px;
     width: 300px;
+    display: flex;
 }
 
 .city-name, .landmark-name, .celebrity-name {

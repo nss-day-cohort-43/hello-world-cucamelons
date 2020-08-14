@@ -1,9 +1,11 @@
 .mainContainer{
     border: black dotted 1px;
+    display: flex;
 }
 
 .cities {
     border: green dotted 5px;
+    display: flex;
 }
 
 .city-name {

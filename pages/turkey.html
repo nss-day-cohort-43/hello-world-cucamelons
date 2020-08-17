@@ -3,42 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, Turkey</title>
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <title>Hello, Turkey!</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <div class="logo"> 
+                <img src="/images/logo/Hello World White Type.png" alt="Hello World White">
+            </div>
+            <li><a href="ireland.html">Ireland</a></li>
+            <li><a href="../index.html">Egypt</a></li>
+            <li><a href="molossia.html">Molossia</a></li>
+            <li><a href="turkey.html" class="active">Turkey</a></li>
+        </ul>
+    </nav>
     <main>
-        <header>
-            <div class="country-img" style="background-image: url(/photos.turkey.jpeg); background-size: cover;"></div>
-            <div>Turkey</div>
-            <!-- <nav>Nav and logo</nav> -->
-        </header>
-
+        
+        <div class="hero">
+            <header>
+                <div class="country-img" style="background-image: url(/images/turkey/turkey.jpeg); background-size: cover;">
+                    <div class="shadow-box">
+                        <div class="country-name">
+                            <h1>Turkey</h1> 
+                        </div>
+                    </div> 
+                </div>           
+            </header>
+        </div>
+        <!-- ------------------------------ Cities --------------------------------- -->
         <section class="mainContainer">
-            <section class="cities">
-                <h2 class="city-name">ISTANBUL</h2>
-                <div class="city-card">
-                    <div class="city-imgBox">
-                        <img src="/photos/istanbul.jpeg" alt="" class="city-img">image
+            <section class="container">
+                <h2 class="cont-title">Cities</h2>
+                <div class="cont-card">
+                    <div class="card-imgBox">
+                        <img src="/images/turkey/istanbul.jpeg" alt="Istanbul" class="card-img">
                     </div>
-                    <div class="city-infoBox">
-                      <p>Istanbul is the only city in the world that straddles two continents: Asia and Europe. </p>
+                    <div class="card-infoBox">
+                        <h3>Istanbul</h3>
+                        <p>The capital of Turkey?</p>
+                    </div>
+                </div>
+
+            </section>
+            <!-- --------------------------- Landmarks ------------------------------ -->
+            <section class="container">
+                <h2 class="cont-title">Landmarks</h2>
+                <div class="cont-card">
+                    <div class="card-imgBox">
+                        <img src="/images/ireland/rock-of-cashel.jpg" alt="Rock of Cashel" class="card-img">
+                    </div>
+                    <div class="card-infoBox">
+                        <h3>Rock of Cashel</h3>
+                        <p>There are also sheep.</p>
+                    </div>
+                </div>
+
+                <div class="cont-card">
+                    <div class="card-imgBox">
+                        <img src="/images/ireland/newgrange.jpeg" alt="Newgrange" class="card-img">
+                    </div>
+                    <div class="card-infoBox">
+                        <h3>Newgrange</h3>
+                        <p>This tomb is a 5,200-year-old stone passage. Located in the Boyne Valley, it was built by stone-age farmers and is older than the Great Pyramids of Egypt.</p>
+                    </div>
+                </div>
+
+                <div class="cont-card">
+                    <div class="card-imgBox">
+                        <img src="/images/ireland/giants-causeway.jpeg" alt="Giants causeway" class="card-img">
+                    </div>
+                    <div class="card-infoBox">
+                        <h3>Giants causeway</h3>
+                        <p>A mezmerizing hexagonal landscape.</p>
+                    </div>
+                </div>
+
+                <div class="cont-card">
+                    <div class="card-imgBox">
+                        <img src="/images/ireland/blarney-stone-and-castle.jpeg" alt="Blarney stone and castle" class="card-img">
+                    </div>
+                    <div class="card-infoBox">
+                        <h3>Blarney stone and castle</h3>
+                        <p>Whoever kisses the stone is said to be given the gift of eloquence.</p>
                     </div>
                 </div>
             </section>
-    
-            <section class="landmarks">
-                <div></div>
-            </section>
-    
-            <section class="celebrities">
-                <div></div>
+            <!-- ----------------------------- Celebrities --------------------------- -->
+            <section class="container">
+                <h2 class="cont-title">Celebrities from Ireland</h2>
+                <!-- https://www.irelandbeforeyoudie.com/32-famous-irish-people-the-most-famous-person-from-every-county/ -->
+                <div class="cont-card">
+                    <div class="card-imgBox">
+                        <img src="/images/ireland/liam-neeson2.jpeg" alt="Liam Neeson" class="card-img">
+                    </div>
+                    <div class="card-infoBox">
+                        <h3>Liam Neeson</h3>
+                        <p>"I will look for you, I will find you and I will kill you."</p>
+                    </div>
+                </div>
+
+                <div class="cont-card">
+                    <div class="card-imgBox">
+                        <img src="/images/ireland/graham-norton2.jpeg" alt="Graham Norton" class="card-img">
+                    </div>
+                    <div class="card-infoBox">
+                        <h3>Graham Norton</h3>
+                        <p>Host of the <i>Graham Norton Show</i> on BBC.</p>
+                    </div>
+                </div>
             </section>
         </section>
 
         
 
-        <footer>©2020 Hello World brought to you by Cucumelons Inc.</footer>
+        <footer>
+            <!-- <nav>
+                <ul>  
+                    <li><a href="index.html">Ireland</a></li>
+                    <li><a href="egypt.html">Egypt</a></li>
+                </ul>
+            </nav>  -->
+            <div class="footer-text">
+                <p>©2020 Hello World brought to you by Cucamelons Inc.</p>
+            </div>
+        </footer>
     </main>
     
 </body>

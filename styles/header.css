@@ -1,0 +1,18 @@
+header {
+    display: flex;
+}
+.countryHero-img {
+    background-image: url("../images/hazy-pyramids.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-basis: 100%;
+}
+.countryHero-text {
+    text-align: center;
+    color: black;
+}

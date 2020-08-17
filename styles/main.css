@@ -1,56 +1,36 @@
-@import "./irelandmain.css";
-
 body, html {
     height: 100%;
 }
-header {
-    display: flex;
-}
-.countryHero-img {
-    background-image: url("../images/hazy-pyramids.jpg");
-    height: 40%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-basis: 100%;
-}
-.countryHero-text {
-    text-align: center;
-    color: black;
-}
+
 .mainContainer {
     display: flex;
     flex-wrap: wrap;
-    border: black dotted 1px;
-    justify-content: space-between;
-    /* flex-direction: column; */
+    justify-content: space-around;
+   
 }
-.city-container, .landmark-container, .celebrity-container {
+.container {
     display: flex;
-    border: green dotted 5px;
     flex-direction: column;
+    flex-basis: 32%;
+    border-top: 10px rgb(197, 157, 117) solid;
 }
-.city-name, .landmark-name, .celebrity-name {
-    border: goldenrod dotted 1px;
-}
-.city-imgBox, .city-infoBox, .city-textBox, .landmark-imgBox, .landmark-infoBox, .landmark-textBox, .celebrity-imgBox, .celebrity-infoBox, .celebrity-textBox{
+
+.infoBox, .textBox {
     display: flex;
-    width: 150px;
 }
-.city-img, .landmark-img, .celebrity-img {
+.img {
+    display: flex;
     width: 100%;
     height: auto;
     margin: 2px;
     padding: 2px;
 }
-.city-card, .landmark-card, .celebrity-card {
+.card {
     display: flex;
-    background-color: sandybrown;
-    flex-basis: 30%;
+    background-color: rgb(228, 219, 210);
+    
 }
-.city-infoText, .landmark-infoText, .celebrity-infoText {
+.text {
     display: flex;
     margin: 5px;
     padding: 5px;
@@ -58,6 +38,11 @@ header {
 h2 {
     margin: 2px;
 }
-.aThird {
-    flex: 1 0 30%;
+footer {
+    display: flex;
+    background: lightgray;
+    height: 5em;
+    margin-top: 50px;
+    padding: 10px;
+    flex-direction: column-reverse;
 }

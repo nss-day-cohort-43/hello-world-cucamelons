@@ -5,20 +5,17 @@ body, html {
 .mainContainer {
     display: flex;
     flex-wrap: wrap;
-    border: greenyellow dotted 5px;
     justify-content: space-around;
-    /* flex-direction: row; */
+   
 }
 .container {
     display: flex;
-    border:red dotted 5px;
     flex-direction: column;
     flex-basis: 32%;
+    border-top: 10px rgb(197, 157, 117) solid;
 }
-.name {
-    border: goldenrod dotted 1px;
-}
-.imgBox, .infoBox, .textBox, {
+
+.infoBox, .textBox {
     display: flex;
 }
 .img {
@@ -30,7 +27,7 @@ body, html {
 }
 .card {
     display: flex;
-    background-color: rgb(175, 151, 126);
+    background-color: rgb(228, 219, 210);
     
 }
 .text {
@@ -40,4 +37,12 @@ body, html {
 }
 h2 {
     margin: 2px;
+}
+footer {
+    display: flex;
+    background: lightgray;
+    height: 5em;
+    margin-top: 50px;
+    padding: 10px;
+    flex-direction: column-reverse;
 }

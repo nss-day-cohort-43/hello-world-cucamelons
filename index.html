@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/nav.css">
     <link rel="stylesheet" href="/styles/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,26 +17,23 @@
             <div class="logo">
                 <img src="/images/logo/Hello World White Type.png" alt="Hello World White">
             </div>
-            <li><a href="/pages/ireland.html">Ireland</a></li>
-            <li><a href="../index.html" class="active">Egypt</a></li>
-            <li><a href="/pages/molossia.html">Molossia</a></li>
-            <li><a href="/pages/turkey.html">Turkey</a></li>
+            <li><a href="pages/ireland.html" class="active">Ireland</a></li>
+            <li><a href="index.html">Egypt</a></li>
+            <li><a href="pages/molossia.html">Molossia</a></li>
+            <li><a href="pages/turkey.html">Turkey</a></li>
         </ul>
     </nav>
     <main>
-        <header>
-            <!-- <nav class="nav">
-                <a class="active" href="#home">Egypt</a>
-                <a href="#pages/ireland.html">Ireland</a>
-                <a href="#pages/turkey.html">Turkey</a>
-                <a href="#">Zach's</a>
-            </nav> -->
-            <div class="country-img">
-                <div class="country-text">
-                    <h1>Hello, Egypt!</h1>
+        <div class="hero">
+            <header>
+                <div class="country-img" style="background-image: url(/images/egypt/hazy-pyramids.jpg); background-size: cover;">
+                    <div class="country-name">
+                        <h1>Egypt</h1>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
+
         <section class="mainContainer">
             <section class="container aThird">
                 <h2 class="name">Cairo</h2>
@@ -54,6 +52,10 @@
                     </div>
                     <p class="text">Founded by Alexander the Great in 332 BCE, Alexandria was an Egyptian capital for over 1000 years.</p>
                 </div>
+            </section>
+
+            <section class="container aThird">
+                <h2 class="name">The Pyramids of Giza</h2>
                 <div class="card">
                     <div class="imgBox">
                         <img src="/images/egypt/pyramidsGizaCamels.jpg" alt="four pyramids and camels in foreground" class="img">

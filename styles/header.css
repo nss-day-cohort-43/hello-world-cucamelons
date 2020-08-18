@@ -28,33 +28,29 @@ h1 {
 .country-img {
     display: flex;
     flex: 0.25 2 120%; 
-    height: 45em;
-    margin-top: -130px;
-    /* margin-right: -80px; */
-    margin-left: -80px; 
+    height: 42em; 
+    margin-top: -130px; /* --- push image under the trasparent nav bar */
+    margin-right: -80px; /* --- when increasing the window size, the picture grows more gradually. */
+    margin-left: -80px; /* --- when increasing the window size, the picture grows more gradually. */
     background-position: 50%; /* ---- How to properly center a background image */
 }
 
-/* .country-img img{
-    padding-bottom: 300px;
-} */
 
 .shadow-box {
     display: flex;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg,rgba(0,0,0,0.3),transparent); /* to darken the lower half of the background image */
+    background: linear-gradient(0deg,rgba(0,0,0,0.3),transparent); 
+    /* to darken the lower half of the background image */
 }
 
 .country-name {
-    /* display: flex; */
     flex-basis: 100%;
-    flex-shrink: 1;
+    position: relative; /* puts the name of the country on top of all other boxes */
     /* border: red dotted 2px; */
     color: white;
     font-size: 30px;
     text-align: center;
-    margin-top: 200px;
     padding-top: 100px;
     margin-top: auto;  /* auto center content vertically */
     margin-bottom: auto; /* auto center content vertically */
@@ -82,16 +78,12 @@ footer {
 
     .country-img {
         display: flex;
-        
-        /* background-size: cover; */
         flex: 2 2 100%;
-        height: 40em;
+        height: 38em;
         margin-top: -100px;
-        margin-left: -80px;
-
+        margin-left: -60px;
+        margin-right: -60px;
         justify-content: center;
-        /* align-content: center; */
-        /* margin-top: -100px; */
     }
 }
 

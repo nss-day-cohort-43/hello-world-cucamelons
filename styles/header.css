@@ -1,6 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+
+    /* -- prevents user from scrolling sideways if any part of the page overflows the width */
+    overflow-x: hidden; 
+    overflow-y: scroll; 
 }
 
 
@@ -21,6 +25,7 @@ header {
 h1 {
     color: white;
     font-family: 'Cabin', sans-serif;
+    font-weight: lighter;
     letter-spacing: 1vh;
     font-size: 3em;
     margin-top: auto;
@@ -31,7 +36,7 @@ h1 {
     display: flex;
     flex: 0.25 2 120%; 
     height: 42em; 
-    margin-top: -130px; /* --- push image under the trasparent nav bar */
+    margin-top: -100px; /* --- push image under the trasparent nav bar */
     margin-right: -80px; /* --- when increasing the window size, the picture grows more gradually. */
     margin-left: -80px; /* --- when increasing the window size, the picture grows more gradually. */
     background-position: 50%; /* ---- How to properly center a background image */
@@ -43,30 +48,27 @@ h1 {
     width: 100%;
     height: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
-    /* to darken the lower half of the background image */
+    /* --- to darken the lower half of the background image*/
 }
 
 .country-name {
     flex-basis: 100%;
-    position: relative; /* puts the name of the country on top of all other boxes */
+    position: relative; /* --- puts the name of the country on top of all other boxes */
     /* border: red dotted 2px; */
     /* flex-shrink: 1; */
     color: white;
     font-size: 30px;
+    padding: 0px 80px;
     text-align: center;
-    padding-top: 100px;
     margin-top: auto;
-    /* auto center content vertically */
+    /* --- auto center content vertically*/
     margin-bottom: auto;
-    /* auto center content vertically */
+    /* --- auto center content vertically */
 }
-
-
 /* --------------------------------------------------------------- */
 
 
 /* ---------------------------- Footer --------------------------- */
-
 footer {
     display: flex;
     background: rgb(20, 9, 4);
@@ -80,8 +82,6 @@ footer {
     padding-bottom: 10px;
     color: bisque;
 }
-
-
 /* --------------------------------------------------------------- */
 
 
@@ -92,12 +92,28 @@ footer {
         display: flex;
         flex: 2 2 100%;
         height: 38em;
-        margin-top: -100px;
-        /* margin-left: -60px;
-        margin-right: -60px; */
-        margin-left: -80px;
+        margin-top: -80px;
+        margin-left: -60px;
+        /* margin-right: -60px;  */
+        /* margin-left: -80px; */
         justify-content: center;
     }
+
+    .country-name {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        position: relative; /* puts the name of the country on top of all other boxes */
+        /* border: red dotted 2px; */
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px;
+        margin-top: auto;
+        /* auto center content vertically */
+        margin-bottom: auto;
+        /* auto center content vertically */
+    }
+
 }
 
 
@@ -112,14 +128,19 @@ footer {
         justify-content: center;
     }
     .country-name {
+        flex-wrap: nowrap;
+        max-height: 172px;
         flex-basis: 100%;
         color: white;
         text-align: center;
         width: auto;
-        padding-top: 0;
+        /* padding-top: 0; */
     }
     h1 {
-        font-size: 3em;
+        flex-wrap: nowrap;
+        max-height: 172px;
+        /* font-weight: lighter; */
+        font-size: 2.5em;
         font-family: 'Cabin', sans-serif;
     }
 }

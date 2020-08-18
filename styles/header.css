@@ -3,7 +3,9 @@ body {
     padding: 0;
 }
 
+
 /* ----------------------- Main Header ------------------------- */
+
 .hero {
     display: flex;
 }
@@ -13,7 +15,7 @@ header {
     clear: both;
     font-weight: bold;
     flex: 2 1 100%;
-    color: white;  
+    color: white;
 }
 
 h1 {
@@ -27,18 +29,20 @@ h1 {
 
 .country-img {
     display: flex;
-    flex: 0.25 2 120%; 
+    flex: 0.25 2 120%;
     height: 32em;
     margin-top: -130px;
-    margin-left: -80px; 
-    background-position: 50%; /* ---- How to properly center a background image */
+    margin-left: -80px;
+    background-position: 50%;
+    /* ---- How to properly center a background image */
 }
 
 .shadow-box {
     display: flex;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg,rgba(0,0,0,0.3),transparent); /* to darken the lower half of the background image */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
+    /* to darken the lower half of the background image */
 }
 
 .country-name {
@@ -49,16 +53,22 @@ h1 {
     text-align: center;
     margin-top: 200px;
     padding-top: 100px;
-    margin-top: auto;  /* auto center content vertically */
-    margin-bottom: auto; /* auto center content vertically */
+    margin-top: auto;
+    /* auto center content vertically */
+    margin-bottom: auto;
+    /* auto center content vertically */
 }
+
+
 /* --------------------------------------------------------------- */
 
+
 /* ---------------------------- Footer --------------------------- */
+
 footer {
     display: flex;
-    background: lightgray;
-    height: 10em;
+    background: rgb(20, 9, 4);
+    height: 5em;
     margin-top: 50px;
     flex-direction: column-reverse;
 }
@@ -66,12 +76,16 @@ footer {
 .footer-text {
     text-align: center;
     padding-bottom: 10px;
+    color: bisque;
 }
+
+
 /* --------------------------------------------------------------- */
 
-/* -------------------- Medium window width --------------------- */
-@media (max-width: 1300px){
 
+/* -------------------- Medium window width --------------------- */
+
+@media (max-width: 1300px) {
     .country-img {
         display: flex;
         flex: 2 2 100%;
@@ -82,8 +96,10 @@ footer {
     }
 }
 
+
 /* --------------------- Small window width ---------------- */
-@media (max-width: 975px){
+
+@media (max-width: 975px) {
     .country-img {
         display: flex;
         flex: 2 2 100%;
@@ -91,7 +107,6 @@ footer {
         margin: -10px;
         justify-content: center;
     }
-
     .country-name {
         flex-basis: 100%;
         color: white;
@@ -99,7 +114,6 @@ footer {
         width: auto;
         padding-top: 0;
     }
-
     h1 {
         font-size: 3em;
         font-family: 'Cabin', sans-serif;

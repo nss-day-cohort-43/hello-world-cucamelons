@@ -18,17 +18,20 @@ nav ul {
   list-style-type: none;
   width: 100%;
   height: 30%;
-  position: absolute;
+  position: absolute; /* -- force nav bar to be visible on top of all other items */
   margin: 0;
   padding: 10px;
   overflow: hidden;
-  background: linear-gradient(180deg,rgba(0,0,0,0.5),transparent); /* that nice transparent gradient nav bar */
+  background: linear-gradient(180deg,rgba(0,0,0,0.5),transparent); 
+  /* that nice transparent gradient nav bar ^ */
 }
 
 nav ul li {
-  display: inline-flex; /* lets all nav items show on the same line and be flexy */
+  display: inline-flex; 
+  /* lets all nav items show on the same line and be flexy */
 }
 
+/* default styling for nav items */
 nav ul li a {
   align-content: flex-end;
   color: rgba(220, 220, 220, 0.694);

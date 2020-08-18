@@ -46,6 +46,15 @@
     width: inherit;
     height: inherit;
 }
+
+/* -- specifically overwrite footer style in header.css 
+-- because I don't want bisque text color */
+main footer div p {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 /* --------------------------------------------------------------- */
 
 /* -------------------- Medium width window --------------------- */

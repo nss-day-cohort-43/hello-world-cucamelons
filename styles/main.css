@@ -47,9 +47,14 @@ h2 {
 
 footer {
     display: flex;
-    background: lightgray;
-    height: 5em;
+    background: rgb(20, 9, 4);
+    height: 10em;
     margin-top: 50px;
     padding: 10px;
     flex-direction: column-reverse;
+}
+.footer-text {
+    text-align: center;
+    padding-bottom: 10px;
+    color: bisque;
 }

@@ -42,7 +42,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-
 /* styling for nav items when hovering over them */
 nav ul li a:hover:not(.active) {
   text-decoration: underline;

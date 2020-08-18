@@ -1,5 +1,8 @@
-body, html {
+body {
+    margin: 0;
+    padding: 0;
     height: 100%;
+    font-family: 'Cabin', sans-serif;
 }
 
 .mainContainer {
@@ -18,6 +21,7 @@ body, html {
 .infoBox, .textBox {
     display: flex;
 }
+
 .img {
     display: flex;
     width: 100%;
@@ -25,11 +29,13 @@ body, html {
     margin: 2px;
     padding: 2px;
 }
+
 .card {
     display: flex;
     background-color: rgb(228, 219, 210);
     
 }
+
 .text {
     display: flex;
     margin: 5px;
